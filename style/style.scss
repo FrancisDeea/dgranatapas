@@ -1,0 +1,111 @@
+@mixin flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button {
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 2rem 0;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+@mixin heading {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    letter-spacing: 0.1rem;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    @include heading;
+}
+
+h2 {
+    font-size: 2.5rem;
+    @include heading;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+p, ol {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-align: justify;
+}
+
+a {
+    @include button;
+}
+
+section {
+    padding: 2rem;
+    height: 100vh;
+    @include flexbox;
+
+    div {
+        padding: 2rem;
+    }
+}
+
+section#top {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/medios/background-leaves-2.jpg") no-repeat center fixed;
+    background-size: cover;
+    overflow: hidden;
+
+    div {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+
+        .pride-cl {
+            background: linear-gradient(90deg,#D12229, #F68A1E, #FDE01A,
+            #007940, #24408E, #732982);
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// start to style the menu
+
+article > p {
+    text-align: center;
+    padding: 0 2rem;
+    margin: 1.5rem 0;
+}
+
+.alergenos {
+    text-align: center;
+}
+
+.alergenos > img {
+    width: 32px;
+    height: 32px;
+}
