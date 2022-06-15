@@ -31,6 +31,8 @@ h2 {
 h3 {
   font-size: 2rem;
   text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 p, ol {
@@ -46,14 +48,57 @@ a {
   font-size: 2rem;
   text-decoration: none;
   padding: 10px 15px;
-  margin: 2rem 0;
+  margin: 2rem 0rem 1rem 0rem;
   border: 1px solid white;
   display: inline-block;
 }
 
 section {
-  padding: 2rem;
+  padding: 0rem 2rem;
+}
+
+section#top {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/medios/background-leaves-2.jpg") no-repeat center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/medios/background-leaves-2.jpg") no-repeat center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+section#top div {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+}
+
+section#top div .pride-cl {
+  background: -webkit-gradient(linear, left top, right top, from(#D12229), color-stop(#F68A1E), color-stop(#FDE01A), color-stop(#007940), color-stop(#24408E), to(#732982));
+  background: linear-gradient(90deg, #D12229, #F68A1E, #FDE01A, #007940, #24408E, #732982);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.fd-hd {
+  background-color: red;
+  padding: 3rem;
+}
+
+.food-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,43 +114,36 @@ section {
           align-items: center;
 }
 
-section div {
-  padding: 2rem;
+article {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
-section#top {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/medios/background-leaves-2.jpg") no-repeat center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/medios/background-leaves-2.jpg") no-repeat center fixed;
-  background-size: cover;
-  overflow: hidden;
+article h3 {
+  width: 80%;
+  margin: 0 auto 1rem auto;
 }
 
-section#top div {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  text-align: center;
+article img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-section#top div .pride-cl {
-  background: -webkit-gradient(linear, left top, right top, from(#D12229), color-stop(#F68A1E), color-stop(#FDE01A), color-stop(#007940), color-stop(#24408E), to(#732982));
-  background: linear-gradient(90deg, #D12229, #F68A1E, #FDE01A, #007940, #24408E, #732982);
-  background-clip: text;
-  color: transparent;
-  text-transform: uppercase;
-}
-
-article > p {
-  text-align: center;
+article p {
   padding: 0 2rem;
-  margin: 1.5rem 0;
 }
 
 .alergenos {
   text-align: center;
 }
 
-.alergenos > img {
+.alergenos img {
   width: 32px;
   height: 32px;
+  margin: 1rem 0 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */

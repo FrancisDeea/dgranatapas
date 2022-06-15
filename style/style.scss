@@ -11,7 +11,7 @@
     font-size: 2rem;
     text-decoration: none;
     padding: 10px 15px;
-    margin: 2rem 0;
+    margin: 2rem 0rem 1rem 0rem;
     border: 1px solid white;
     display: inline-block;
 }
@@ -49,7 +49,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    text-align: center;
+    @include heading;
 }
 
 p, ol {
@@ -64,21 +64,18 @@ a {
 }
 
 section {
-    padding: 2rem;
-    height: 100vh;
-    @include flexbox;
-
-    div {
-        padding: 2rem;
-    }
+    padding: 0rem 2rem;
 }
 
 section#top {
+    height: 100vh;
+    @include flexbox;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/medios/background-leaves-2.jpg") no-repeat center fixed;
     background-size: cover;
     overflow: hidden;
 
     div {
+        padding: 2rem;
         background-color: rgba(0, 0, 0, 0.7);
         color: white;
         text-align: center;
@@ -95,17 +92,40 @@ section#top {
 
 // start to style the menu
 
-article > p {
-    text-align: center;
-    padding: 0 2rem;
-    margin: 1.5rem 0;
+.fd-hd {
+    background-color: red;
+    padding: 3rem;
+}
+
+.food-container {
+    @include flexbox;
+}
+
+article {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    width: 100%;
+    h3 {
+        width: 80%;
+        margin: 0 auto 1rem auto;
+    }
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+    p {
+        padding: 0 2rem;
+    }
 }
 
 .alergenos {
     text-align: center;
+    img {
+        width: 32px;
+        height: 32px;
+        margin: 1rem 0 1rem 0;
+    }
 }
 
-.alergenos > img {
-    width: 32px;
-    height: 32px;
-}
