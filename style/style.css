@@ -116,8 +116,11 @@ section#top div .pride-cl {
 
 article {
   border: 1px solid black;
+  border-radius: 1rem;
   margin-bottom: 2rem;
   width: 100%;
+  background-color: black;
+  color: white;
 }
 
 article h3 {
@@ -131,10 +134,12 @@ article img {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 article p {
   padding: 0 2rem;
+  text-align: center;
 }
 
 .alergenos {

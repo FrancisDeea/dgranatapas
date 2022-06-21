@@ -103,8 +103,11 @@ section#top {
 
 article {
     border: 1px solid black;
+    border-radius: 1rem;
     margin-bottom: 2rem;
     width: 100%;
+    background-color: black;
+    color: white;
     h3 {
         width: 80%;
         margin: 0 auto 1rem auto;
@@ -114,9 +117,11 @@ article {
         height: 300px;
         object-fit: cover;
         margin-bottom: 1rem;
+        border-radius: 1rem 1rem 0 0;
     }
     p {
         padding: 0 2rem;
+        text-align: center;
     }
 }
 
