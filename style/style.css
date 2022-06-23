@@ -184,7 +184,7 @@ section#top div .pride-cl {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/medios/background-leaves-mobile.webp) no-repeat fixed;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/medios/background-leaves-mobile.webp) no-repeat fixed;
   background-size: cover;
-  height: 100vh;
+  height: 2000px;
 }
 
 .fd-hd {
