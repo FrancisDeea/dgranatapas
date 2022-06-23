@@ -11,10 +11,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Roboto:wght@900&display=swap"
         rel="stylesheet">
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0";
+        }
+    </script>
 
 </head>
 
 <body>
+    <header>
+        <img id="logo" src="#" alt="logotipo">
+        <button class="open-bt" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="myNav" class="overlay">
+            <ul class="overlay-content">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Carta</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contacto</a></li>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></i></a>
+                </div>
+            </ul>
+            <button class="close-bt" onclick="closeNav()">
+                <i class="fas fa-times"></i>
+            </button>
+        </nav>
+    </header>
     <main>
         <section id="top">
             <div>

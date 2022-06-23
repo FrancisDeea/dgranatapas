@@ -52,7 +52,8 @@ h3 {
     @include heading;
 }
 
-p, ol {
+p,
+ol {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
@@ -66,6 +67,86 @@ a {
 section {
     padding: 0rem 2rem;
 }
+
+// styling header and nav 
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: 0.3s;
+
+    .overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        list-style-type: none;
+
+        li > a {
+            display: block;
+            color: rgb(218, 218, 218);
+            text-decoration: none;
+            padding: 5px;
+            font-size: 2.5rem;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+button.open-bt,
+button.close-bt {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding: 4px;
+    cursor: pointer;
+}
+
+button.close-bt {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 3rem;
+}
+
+div.social-icon {
+    margin-top: 25px;
+}
+
+.social-icon a {
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2.5rem;
+
+}
+
+// end header and nav
 
 section#top {
     height: 100vh;
@@ -81,8 +162,8 @@ section#top {
         text-align: center;
 
         .pride-cl {
-            background: linear-gradient(90deg,#D12229, #F68A1E, #FDE01A,
-            #007940, #24408E, #732982);
+            background: linear-gradient(90deg, #D12229, #F68A1E, #FDE01A,
+                    #007940, #24408E, #732982);
             background-clip: text;
             color: transparent;
             text-transform: uppercase;
@@ -91,10 +172,18 @@ section#top {
 }
 
 // start to style the menu
+#menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(/medios/background-leaves-mobile.webp) no-repeat center fixed;
+    background-size: cover;
+    
+}
 
 .fd-hd {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.212);
+    border: 2px solid white;
+    color: white;
     padding: 3rem;
+    margin-bottom: 4rem;
 }
 
 .food-container {
@@ -102,35 +191,48 @@ section#top {
 }
 
 article {
-    border: 1px solid black;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    box-shadow: 0px 13px 27px -5px rgba(153, 153, 159, 0.25), 0px 8px 16px -8px rgba(255, 255, 255, 0.3);
+
     h3 {
         width: 80%;
         margin: 0 auto 1rem auto;
     }
+
     img {
         width: 100%;
         height: 300px;
         object-fit: cover;
-        margin-bottom: 1rem;
-        border-radius: 1rem 1rem 0 0;
+        margin-bottom: 1.5rem;
+        border-radius: 0.4rem 0.4rem 0 0;
     }
+
     p {
         padding: 0 2rem;
         text-align: center;
+    }
+
+    ol {
+        padding: 0 4rem;
+        text-align: left;
+
+        li:first-child {
+            margin-bottom: 1rem;
+        }
     }
 }
 
 .alergenos {
     text-align: center;
+
     img {
         width: 32px;
         height: 32px;
-        margin: 1rem 0 1rem 0;
+        margin: 1rem 0 1.5rem 0;
     }
 }
-

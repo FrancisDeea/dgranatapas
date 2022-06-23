@@ -35,7 +35,8 @@ h3 {
   font-weight: 700;
 }
 
-p, ol {
+p,
+ol {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -55,6 +56,92 @@ a {
 
 section {
   padding: 0rem 2rem;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav.overlay .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  list-style-type: none;
+}
+
+nav.overlay .overlay-content li > a {
+  display: block;
+  color: #dadada;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 2.5rem;
+}
+
+nav.overlay .overlay-content li > a:hover {
+  color: red;
+}
+
+button.open-bt,
+button.close-bt {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  padding: 4px;
+  cursor: pointer;
+}
+
+button.close-bt {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  font-size: 3rem;
+}
+
+div.social-icon {
+  margin-top: 25px;
+}
+
+.social-icon a {
+  color: #dadada;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 2.5rem;
 }
 
 section#top {
@@ -93,9 +180,18 @@ section#top div .pride-cl {
   text-transform: uppercase;
 }
 
+#menu {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/medios/background-leaves-mobile.webp) no-repeat center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/medios/background-leaves-mobile.webp) no-repeat center fixed;
+  background-size: cover;
+}
+
 .fd-hd {
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.212);
+  border: 2px solid white;
+  color: white;
   padding: 3rem;
+  margin-bottom: 4rem;
 }
 
 .food-container {
@@ -115,12 +211,14 @@ section#top div .pride-cl {
 }
 
 article {
-  border: 1px solid black;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
   width: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  -webkit-box-shadow: 0px 13px 27px -5px rgba(153, 153, 159, 0.25), 0px 8px 16px -8px rgba(255, 255, 255, 0.3);
+          box-shadow: 0px 13px 27px -5px rgba(153, 153, 159, 0.25), 0px 8px 16px -8px rgba(255, 255, 255, 0.3);
 }
 
 article h3 {
@@ -133,13 +231,22 @@ article img {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 1rem;
-  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 1.5rem;
+  border-radius: 0.4rem 0.4rem 0 0;
 }
 
 article p {
   padding: 0 2rem;
   text-align: center;
+}
+
+article ol {
+  padding: 0 4rem;
+  text-align: left;
+}
+
+article ol li:first-child {
+  margin-bottom: 1rem;
 }
 
 .alergenos {
@@ -149,6 +256,6 @@ article p {
 .alergenos img {
   width: 32px;
   height: 32px;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 1.5rem 0;
 }
 /*# sourceMappingURL=style.css.map */
