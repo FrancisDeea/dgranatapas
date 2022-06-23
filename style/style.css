@@ -249,6 +249,10 @@ article ol li:first-child {
   margin-bottom: 1rem;
 }
 
+article.last {
+  margin-bottom: 15rem;
+}
+
 .alergenos {
   text-align: center;
 }
