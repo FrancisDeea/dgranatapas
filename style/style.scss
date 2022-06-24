@@ -70,6 +70,10 @@ section {
 
 // styling header and nav 
 
+#logo {
+    width: 200px;
+}
+
 header {
     background-color: black;
     color: white;
@@ -121,7 +125,7 @@ button.close-bt {
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 1rem;
     padding: 4px;
     cursor: pointer;
@@ -151,7 +155,7 @@ div.social-icon {
 section#top {
     height: 100vh;
     @include flexbox;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/medios/background-leaves-2.jpg") no-repeat center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/medios/background-leaves-mobile.webp") no-repeat center fixed;
     background-size: cover;
     overflow: hidden;
 
@@ -175,7 +179,7 @@ section#top {
 #menu {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(/medios/background-leaves-mobile.webp) no-repeat fixed;
     background-size: cover;
-    height: 20000px;
+    height: 2000px;
     
 }
 
