@@ -177,14 +177,12 @@ section#top {
 
 // start to style the menu
 #menu {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(/medios/background-leaves-mobile.webp) no-repeat fixed;
-    background-size: cover;
-    height: 2000px;
-    
+    background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+
 }
 
 .fd-hd {
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid white;
     color: white;
     padding: 3rem;
@@ -200,10 +198,9 @@ article {
     border-radius: 0.5rem;
     margin-bottom: 4rem;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    box-shadow: 0px 13px 27px -5px rgba(107, 107, 112, 0.25), 0px 8px 16px -8px rgba(109, 109, 109, 0.3);
-
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 6px, rgba(0, 0, 0, 0.7) 0px 3px 6px;
     h3 {
         width: 80%;
         margin: 0 auto 1rem auto;
